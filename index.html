@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>El rinconcito de Mushasha</title>
+  <meta name="description" content="Un pequeño rincón con palabras bonitas, hecho con cariño.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#2F2019">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&display=swap">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script>document.documentElement.className += ' js';</script>
+</head>
+<body>
+
+  <!-- BIENVENIDA -->
+  <section id="bienvenida" class="bienvenida" aria-labelledby="bv-titulo">
+    <div class="bv-inner">
+      <svg id="bv-taza" class="taza" viewBox="0 0 120 120" aria-hidden="true" focusable="false">
+        <path class="vapor" pathLength="40" style="--d:0s" d="M46 46c-5-8 4-12-1-21"/>
+        <path class="vapor" pathLength="40" style="--d:.9s" d="M60 46c-5-8 4-14-1-24"/>
+        <path class="vapor" pathLength="40" style="--d:1.8s" d="M74 46c-5-8 4-12-1-21"/>
+        <path class="taza-cuerpo" d="M28 56h56v22c0 14-11 24-24 24h-8c-13 0-24-10-24-24z"/>
+        <path class="taza-asa" d="M84 62h5a10 10 0 0 1 0 20h-6"/>
+        <path class="taza-plato" d="M20 110h80"/>
+      </svg>
+      <div id="bv-ramo" class="bv-ramo" hidden></div>
+      <h1 id="bv-titulo" style="--d:0">Hola, Mushasha ♡</h1>
+      <p id="bv-p1" style="--d:1">Hice este pequeño rinconcito pensando en ti.</p>
+      <p id="bv-p2" style="--d:2">Un lugar al que puedes volver cuando quieras, donde siempre encontrarás unas palabritas bonitas para ti.</p>
+      <p id="bv-p3" style="--d:3">Espero que cada vez que entres encuentres un motivo para sonreír.</p>
+      <button type="button" id="btn-entrar" class="btn-entrar" style="--d:4">Entrar a mi rinconcito</button>
+    </div>
+  </section>
+
+  <!-- RINCONCITO -->
+  <main id="rincon">
+
+    <header class="saludo">
+      <h1 id="saludo" tabindex="-1">Hola, Mushasha</h1>
+      <p id="subsaludo" class="subsaludo"></p>
+      <div class="pildoras">
+        <p id="contador" class="contador"></p>
+        <a id="cumple-pildora" class="contador contador-cumple" href="#cumple" hidden></a>
+      </div>
+    </header>
+
+    <section class="frase" aria-labelledby="frase-titulo">
+      <div class="frase-panel">
+        <h2 id="frase-titulo">Tu frase de hoy</h2>
+        <blockquote id="frase-texto" class="frase-texto"></blockquote>
+        <p id="frase-fecha" class="frase-fecha"></p>
+      </div>
+    </section>
+
+    <section id="cumple" class="cumple" aria-labelledby="cumple-titulo" hidden>
+      <h2 id="cumple-titulo"></h2>
+      <p id="cumple-sub" class="cumple-sub"></p>
+      <div id="cumple-dibujo" class="cumple-dibujo" role="img"></div>
+      <div id="cumple-zona" hidden>
+        <button type="button" id="btn-carta-cumple" class="btn-carta" aria-expanded="false" aria-controls="carta-cumple">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7.5 8 6 8-6"/></svg>
+          <span id="btn-carta-cumple-texto">Abrir mi carta de cumpleaños</span>
+        </button>
+        <div id="carta-cumple" class="carta-envoltura" role="region" aria-label="Carta de cumpleaños" inert>
+          <div class="carta-interior">
+            <article class="carta">
+              <p class="carta-inicio">Mushasha:</p>
+              <p>Hoy es tu día, y quería que este rinconcito también lo supiera. Feliz cumpleaños.</p>
+              <p>Gracias por ser como eres: por tu forma tan tuya de sonreír, por tu ternura y por todo lo bonito que le sumas a quienes te rodean, muchas veces sin darte cuenta.</p>
+              <p>Ojalá este nuevo año te traiga calma cuando la necesites, motivos para reír sin razón, café rico y personas que te quieran tan bonito como mereces. Que se cumpla todo lo que te hace ilusión, a tu ritmo y sin prisa.</p>
+              <p>Y que no se te olvide nunca: eres especial, eres querida y eres mucho más fuerte de lo que a veces piensas. Hoy no tienes que hacer nada más que dejarte consentir.</p>
+              <p>Te dejo estos tulipanes, porque una vez me contaste que te gustan.</p>
+              <p class="carta-firma">Con todo mi cariño.<br>Feliz cumpleaños, Mushasha ♡</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="musica" aria-labelledby="musica-titulo">
+      <h2 id="musica-titulo">Una canción para ti</h2>
+      <p class="detalle"><strong>Mil y una noches</strong><br>Maki, María Artés</p>
+      <div class="video">
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/vZe7-K_dIVc?start=59&amp;rel=0&amp;playsinline=1"
+          title="Mil y una noches – Maki, María Artés"
+          loading="lazy"
+          allow="encrypted-media; picture-in-picture; fullscreen"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
+      </div>
+      <p class="nota">Dale play cuando quieras. Empieza en la parte que quería que escucharas.
+        <a href="https://youtu.be/vZe7-K_dIVc?t=59" target="_blank" rel="noopener">Abrir en YouTube</a></p>
+    </section>
+
+    <section class="dificil">
+      <button type="button" id="btn-carta" class="btn-carta" aria-expanded="false" aria-controls="carta">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7.5 8 6 8-6"/></svg>
+        <span>Para cuando el día se pone difícil</span>
+      </button>
+      <div id="carta" class="carta-envoltura" role="region" aria-label="Carta para un día difícil" inert>
+        <div class="carta-interior">
+          <article class="carta">
+            <p class="carta-inicio">Mushasha:</p>
+            <p>Si llegaste hasta aquí, es porque hoy pesa un poco más de lo normal. Primero, respira. Despacio. Aquí no tienes que explicar nada ni estar bien para nadie.</p>
+            <p>Un día difícil no dice nada malo de ti. Solo significa que eres humana, que sientes de verdad y que has cargado cosas importantes. Y aun así sigues aquí, intentándolo. Eso es valentía de la buena, aunque hoy no la sientas así.</p>
+            <p>Hoy no tienes que resolverlo todo. Haz solo lo siguiente: toma agua, come algo rico y, si puedes, ponte una canción (la de este rincón también sirve) y descansa un ratito. Lo demás puede esperar.</p>
+            <p>Y si hoy te cuesta verlo, yo te lo recuerdo: eres querida, eres capaz y eres muchísimo más fuerte de lo que este día te hace sentir. Esto también va a pasar.</p>
+            <p>Vuelve a este rincón las veces que lo necesites. Siempre vas a encontrar unas palabritas para ti.</p>
+            <p class="carta-firma">Con todo mi cariño, El Mushasho ♡</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="despedida" aria-labelledby="despedida-titulo">
+      <h2 id="despedida-titulo">Antes de irte</h2>
+      <p>Gracias por pasar por tu rinconcito. Aquí todos los días hay algo nuevo esperándote, así que vuelve cuando quieras.</p>
+      <p id="despedida-hora" class="despedida-hora"></p>
+      <button type="button" id="btn-copiar" class="btn-copiar">Llevarme la frase de hoy</button>
+      <p id="copiado" class="copiado" role="status" aria-live="polite"></p>
+      <p class="firma-final">Hasta pronto, Mushasha ♡</p>
+    </section>
+
+    <footer class="pie">Hecho con cariño, solo para ti.</footer>
+  </main>
+
+  <noscript><p class="sin-js">Para ver tu rinconcito necesitas activar JavaScript en el navegador.</p></noscript>
+
+  <script src="js/frases.js"></script>
+  <script src="js/logica.js"></script>
+  <script src="js/tulipanes.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
